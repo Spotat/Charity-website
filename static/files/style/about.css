@@ -1,0 +1,191 @@
+:root {
+    /* --color-primary: #228b22;
+    --color-secondary: #90ee90;
+    --color-accent: #87ceeb;
+    --color-bg: #ffffff;
+    --color-text: #36454f; */
+    
+    --color-primary: #003366;
+    --color-secondary: #add8e6;
+    --color-accent: #ffa500;
+    --color-bg: #ffffff;
+    --color-text: #333333;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../assets/Raleway/Raleway-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Lato-Regular;
+    src: url(../assets/lato/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: Merriweather-Regular;
+    src: url(../assets/Merriweather/Merriweather-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+p, a  {
+    font-family: Merriweather-Regular;
+}
+h1, h2, h3, h4, h5, h6,  button {
+    font-family: Raleway;
+}
+body {
+    background-color: var(--color-bg);
+}
+.hero-section {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+.hero-section > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(60%) saturate(40%) sepia(30%);
+}
+.hero-section > .nav-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    margin-top: 30px;
+}
+.container {
+    width: 70%;
+    margin: auto;
+}
+.header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background: var(--color-bg);
+    letter-spacing: 1px;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 12px;
+    border-right: 1px solid var(--color-secondary);
+}
+.logo > h2 {
+    font-size: 30px;
+    text-align: start;
+    line-height: normal;
+    color: var(--color-primary);
+}
+.logo > h2 span {
+    padding: 5px;
+    background: #87cfeb70;
+    border-radius: 50%;
+    color: black;
+    border-radius: 30% 70% 70% 30%/ 70% 70% 30% 30%;
+}
+.logo > p {
+    font-size: 12px;
+    text-align: start;
+    text-wrap: nowrap;
+    /* line-height: normal; */
+    font-family: Raleway;
+    color: var(--color-text);
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.navbar {
+    width: 100%;
+}
+.primary-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--gap, 1em);
+    border-bottom: 1px solid var(--color-secondary);
+    background: #33333317;
+}
+.primary-nav > .info {
+    display: flex;
+    gap: var(--gap, 10px);
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+}
+.info > i {
+    color: var(--color-secondary);
+}
+.info > p {
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 16px;
+}
+.primary-nav > button {
+    padding: 5px 30px;
+    font-size: 18px;
+    background-color: var(--color-accent);
+    border: none;
+    color: var(--color-bg);
+    font-weight: 530;
+}
+.secondary-nav {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links a {
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--color-text);
+    margin-left: 10px;
+    transition: all .2s ease-in-out;
+    padding: 5px;
+    font-weight: 600;
+    font-family: Raleway;
+}
+.nav-links a:hover, .nav-links a.active {
+    color: var(--color-primary);
+    outline: none;
+}
+.socials a {
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--color-text);
+    margin-left: 10px;
+}
+.slider {
+    width: 55%;
+    display: grid;
+    gap: 2em;
+    margin-top: 3.5em;
+}
+.slider > h2 {
+    font-size: 2.8em;
+    /* line-height: normal; */
+    color: var(--color-bg);
+    font-weight: 750;
+    font-feature-settings: "opsz" 70;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.slider > p {
+    width: 90%;
+    font-size: 16px;
+    /* color: var(--color-text); */
+    color: var(--color-bg);
+    font-family: Raleway;
+    font-weight: 500;
+}

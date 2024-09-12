@@ -143,6 +143,7 @@
     .about-section.services {
         margin-bottom: 3em;
         margin-top: 3em;
+        flex-direction: column;
     }
     .about-section.services > .about-image > img:nth-child(2) {
         border-radius: 50%;
