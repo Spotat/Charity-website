@@ -249,4 +249,36 @@
         font-size: 14px;
         color: var(--color-primary);
     }
+
+
+    
+    .cont-bg > .container {
+        flex-direction: column;
+    }
+    .cont-stat {
+        border-bottom: 1px solid var(--color-accent);
+        border-spacing: 2px;
+    }
+    .cont-stat > h2 {
+        font-size: 1.8em;
+    }
+    .cont-stat > p {
+        font-size: 15px;
+    }
+
+    .volunteer-cont > h1 {
+        font-size: 1.5em;
+        font-weight: 800;
+        color: var(--color-primary);
+    }
+    
+    .footer-cont {
+        width: 90%;
+        flex-direction: column;
+        gap: var(--gap, 2em);
+    }
+    .footer-col {
+        flex: 100%;
+        width: 100%;
+    }
 }
